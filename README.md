@@ -1,14 +1,10 @@
-# github-tag-action
+# git-tag-semver
 
 A Github Action to automatically bump and tag master, on merge, with the latest SemVer formatted version.
 
-[![Build Status](https://github.com/anothrNick/github-tag-action/workflows/Bump%20version/badge.svg)](https://github.com/anothrNick/github-tag-action/workflows/Bump%20version/badge.svg)
-[![Stable Version](https://img.shields.io/github/v/tag/anothrNick/github-tag-action)](https://img.shields.io/github/v/tag/anothrNick/github-tag-action)
-[![Latest Release](https://img.shields.io/github/v/release/anothrNick/github-tag-action?color=%233D9970)](https://img.shields.io/github/v/release/anothrNick/github-tag-action?color=%233D9970)
-
-> Medium Post: [Creating A Github Action to Tag Commits](https://itnext.io/creating-a-github-action-to-tag-commits-2722f1560dec)
-
-[<img src="https://miro.medium.com/max/1200/1*_4Ex1uUhL93a3bHyC-TgPg.png" width="400">](https://itnext.io/creating-a-github-action-to-tag-commits-2722f1560dec)
+[![Build Status](https://github.com/andrewvdp/git-tag-semver/workflows/Bump%20version/badge.svg)](https://github.com/andrewvdp/git-tag-semver/workflows/Bump%20version/badge.svg)
+[![Stable Version](https://img.shields.io/github/v/tag/andrewvdp/git-tag-semver)](https://img.shields.io/github/v/tag/andrewvdp/git-tag-semver)
+[![Latest Release](https://img.shields.io/github/v/release/andrewvdp/git-tag-semver?color=%233D9970)](https://img.shields.io/github/v/release/andrewvdp/git-tag-semver?color=%233D9970)
 
 ### Usage
 
@@ -26,7 +22,7 @@ jobs:
       with:
         fetch-depth: '0'
     - name: Bump version and push tag
-      uses: anothrNick/github-tag-action@1.26.0
+      uses: andrewvdp/git-tag-semver@1.26.0
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WITH_V: true
@@ -83,12 +79,12 @@ If `#none` is contained in the commit message, it will skip bumping regardless `
 
 [fsaintjacques/semver-tool](https://github.com/fsaintjacques/semver-tool)
 
-### Projects using github-tag-action
+### Projects using git-tag-semver
 
-A list of projects using github-tag-action for reference.
+A list of projects using git-tag-semver for reference.
 
-* another/github-tag-action (uses itself to create tags)
+* another/git-tag-semver (uses itself to create tags)
 
-* [anothrNick/json-tree-service](https://github.com/anothrNick/json-tree-service)
+* [andrewvdp/json-tree-service](https://github.com/andrewvdp/json-tree-service)
 
   > Access JSON structure with HTTP path parameters as keys/indices to the JSON.

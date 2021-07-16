@@ -1,6 +1,6 @@
-name: 'Github Tag Bump'
+name: 'Git Tag Semver'
 description: 'Bump and push git tag on merge'
-author: 'Nick Sjostrom'
+author: 'Andrew Van De Poel'
 runs:
   using: 'docker'
   image: 'Dockerfile'
